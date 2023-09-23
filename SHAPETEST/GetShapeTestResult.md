@@ -23,4 +23,12 @@ Unless the return value is 2, the other return values are undefined.
 * **entityHit**: Any dynamic entity hit by the shape test.
 
 ## Return value
-`0` if the handle is invalid, `1` if the shape test is still pending, or `2` if the shape test has completed, and the handle should be invalidated.
+state: `0` if the handle is invalid, `1` if the shape test is still pending, or `2` if the shape test has completed, and the handle should be invalidated.
+
+hit: Whether or not the shape test hit any collisions.
+
+endCoords: The resulting coordinates where the shape test hit a collision.
+
+surfaceNormal: The surface normal of the hit position.
+
+entityHit: Any dynamic entity hit by the shape test.
